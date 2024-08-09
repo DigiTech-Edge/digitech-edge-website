@@ -11,7 +11,7 @@ const bannerItems = [
     link: "/get-in-touch",
     buttonText: "Get in Touch",
   },
-  { text: "Discover Our Story", link: "/about", buttonText: "About Us" },
+  { text: "Discover Our Story", link: "/about-us", buttonText: "About Us" },
   {
     text: "Explore Our Services",
     link: "/what-we-do",

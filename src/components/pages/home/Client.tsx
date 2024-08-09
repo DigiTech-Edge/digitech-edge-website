@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import UnderlinedHeading from "@/helpers/UnderlinedHeading";
+import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { Avatar } from "@nextui-org/react";
 
 interface ClientService {

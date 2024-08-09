@@ -5,7 +5,7 @@ export const NavbarLinks = [
   },
   {
     label: "About Us",
-    href: "/about",
+    href: "/about-us",
   },
   {
     label: "What we do",

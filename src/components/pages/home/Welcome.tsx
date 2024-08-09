@@ -1,6 +1,6 @@
 "use client";
 
-import UnderlinedHeading from "@/helpers/UnderlinedHeading";
+import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -50,7 +50,7 @@ const Welcome = () => {
         </div>
 
         <div className="text-right">
-          <Link href="/about" className="text-sm">
+          <Link href="/about-us" className="text-sm">
             <motion.span
               className="flex gap-2 items-center justify-end"
               whileHover={{ scale: 1.05 }}

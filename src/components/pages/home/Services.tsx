@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import UnderlinedHeading from "@/helpers/UnderlinedHeading";
+import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { Button } from "@nextui-org/react";
 
 interface Service {
