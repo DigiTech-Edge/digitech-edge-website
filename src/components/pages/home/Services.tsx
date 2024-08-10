@@ -5,44 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { Button } from "@nextui-org/react";
-
-interface Service {
-  name: string;
-  description: string;
-}
-
-const services: Service[] = [
-  {
-    name: "UI and UX Solutions",
-    description:
-      "Creating intuitive and engaging user interfaces and experiences to enhance user satisfaction and interaction.",
-  },
-  {
-    name: "Web Design Solutions",
-    description:
-      "Designing visually appealing and functional websites tailored to meet your business needs.",
-  },
-  {
-    name: "IT Skills Training",
-    description:
-      "Providing comprehensive training programs to equip individuals with essential IT skills and knowledge.",
-  },
-  {
-    name: "Graphic Design",
-    description:
-      "Crafting visually compelling graphics and visual content to effectively communicate your brand message.",
-  },
-  {
-    name: "IT Infrastructure Management",
-    description:
-      "Managing and optimizing your IT infrastructure to ensure seamless and efficient operations.",
-  },
-  {
-    name: "IT Consulting and Strategy",
-    description:
-      "Offering expert IT consulting services to develop and implement effective technology strategies for your business.",
-  },
-];
+import { services } from "@/lib/constants";
 
 const Services = () => {
   return (
