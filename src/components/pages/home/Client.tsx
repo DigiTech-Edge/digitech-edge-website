@@ -145,7 +145,7 @@ const Client = () => {
       </motion.div>
 
       <motion.div
-        className=" p-8 rounded-lg"
+        className="p-2 rounded-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
@@ -168,6 +168,7 @@ const Client = () => {
                   src=""
                   alt={`${clientReviews[currentReviewIndex].name} Avatar`}
                   size="lg"
+                  className="flex-shrink-0"
                 />
                 <div>
                   <p className="text-gray-600 mb-2">
