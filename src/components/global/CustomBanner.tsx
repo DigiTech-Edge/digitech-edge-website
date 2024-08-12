@@ -12,7 +12,7 @@ interface BannerProps {
 const CustomBanner: React.FC<BannerProps> = ({
   title,
   imageSrc,
-  height = "600px",
+  height = "300px",
 }) => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
