@@ -54,7 +54,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
       </div>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        className="flex flex-wrap gap-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -67,7 +67,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
             key={index}
           >
             <motion.div
-              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+              className="bg-white w-[280px] rounded-lg shadow-md overflow-hidden cursor-pointer"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}

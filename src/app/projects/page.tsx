@@ -33,7 +33,7 @@ const projectsData = [
     category: "IT Skills Training",
   },
   {
-    name: "Digital Transformation Strategy",
+    name: "Digital Transformation",
     image: "/images/projects/AirCalling.png",
     category: "IT Consulting and Strategy",
   },
