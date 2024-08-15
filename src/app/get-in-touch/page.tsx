@@ -15,7 +15,7 @@ export default function GetInTouch() {
     <div className="relative mb-10">
       <CustomBanner title="Get in Touch" imageSrc="/images/banner.png" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-40 z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="shadow-xl h-full">
             <CardBody className="p-8 overflow-hidden">
