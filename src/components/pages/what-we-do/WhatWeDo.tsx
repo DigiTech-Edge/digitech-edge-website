@@ -4,6 +4,25 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { services } from "@/lib/constants";
+import { 
+  FaDesktop, 
+  FaPaintBrush, 
+  FaServer, 
+  FaChalkboardTeacher,
+  FaChartLine,
+  FaMobileAlt 
+} from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
+
+const iconComponents = {
+  FaDesktop,
+  MdWeb,
+  FaChalkboardTeacher,
+  FaPaintBrush,
+  FaServer,
+  FaChartLine,
+  FaMobileAlt,
+};
 
 const WhatWeDo = () => {
   const [selectedService, setSelectedService] = useState(services[0]);
@@ -12,29 +31,29 @@ const WhatWeDo = () => {
     <div className="w-full max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="space-y-8 lg:sticky lg:top-0 lg:self-start ">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.name}
-              className={`flex items-start space-x-4 cursor-pointer p-4 rounded-lg ${
-                selectedService.name === service.name ? "bg-blue-100" : ""
-              }`}
-              onClick={() => setSelectedService(service)}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index, duration: 0.5 }}
-            >
-              <Image
-                src="/images/service.png"
-                alt="Service icon"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-lg font-semibold">{service.name}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            </motion.div>
-          ))}
+          {services.map((service, index) => {
+            const IconComponent = iconComponents[service.iconName as keyof typeof iconComponents];
+            return (
+              <motion.div
+                key={service.name}
+                className={`flex items-start space-x-4 cursor-pointer p-4 rounded-lg ${
+                  selectedService.name === service.name ? "bg-blue-100" : ""
+                }`}
+                onClick={() => setSelectedService(service)}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * index, duration: 0.5 }}
+              >
+                <div className="text-blue-600 text-3xl">
+                  <IconComponent />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold">{service.name}</h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         <motion.div

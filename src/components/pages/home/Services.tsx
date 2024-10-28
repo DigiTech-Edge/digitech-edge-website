@@ -6,11 +6,30 @@ import Link from "next/link";
 import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { Button } from "@nextui-org/react";
 import { services } from "@/lib/constants";
+import {
+  FaDesktop,
+  FaPaintBrush,
+  FaServer,
+  FaChalkboardTeacher,
+  FaChartLine,
+  FaMobileAlt,
+} from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
+
+const iconComponents = {
+  FaDesktop,
+  MdWeb,
+  FaChalkboardTeacher,
+  FaPaintBrush,
+  FaServer,
+  FaChartLine,
+  FaMobileAlt,
+};
 
 const Services = () => {
   return (
     <motion.div
-      className="w-full max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+      className="w-full max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -26,40 +45,41 @@ const Services = () => {
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.name}
-            className="flex items-start space-x-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 * index, duration: 0.5 }}
-          >
-            <Image
-              src="/images/service.png"
-              alt="Service icon"
-              width={40}
-              height={40}
-            />
-            <div>
-              <h3 className="text-lg font-semibold">{service.name}</h3>
-              <p className="text-gray-600">{service.description}</p>
-              <Link
-                href={`/what-we-do/${service.name
-                  .toLowerCase()
-                  .replace(/ /g, "-")}`}
-              >
-                <Button
-                  radius="full"
-                  size="sm"
-                  color="primary"
-                  className="mt-2"
+        {services.map((service, index) => {
+          const IconComponent =
+            iconComponents[service.iconName as keyof typeof iconComponents];
+          return (
+            <motion.div
+              key={service.name}
+              className="flex items-start space-x-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * index, duration: 0.5 }}
+            >
+              <div className="text-blue-600 text-3xl">
+                <IconComponent />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">{service.name}</h3>
+                <p className="text-gray-600">{service.description}</p>
+                <Link
+                  href={`/what-we-do?service=${service.name
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`}
                 >
-                  Explore
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        ))}
+                  <Button
+                    radius="full"
+                    size="sm"
+                    color="primary"
+                    className="mt-2"
+                  >
+                    Explore
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
 
       <motion.div

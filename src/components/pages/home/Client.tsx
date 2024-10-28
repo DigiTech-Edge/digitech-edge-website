@@ -53,13 +53,13 @@ const clientReviews = [
     avatar: "/images/client-avatar-1.jpg",
   },
   {
-    text: "TechEdge has been instrumental in our digital transformation journey. Their expertise is unmatched.",
+    text: "DigiTech Edge has been instrumental in our digital transformation journey. Their expertise is unmatched.",
     name: "Sarah Johnson",
     position: "CTO, InnovateTech",
     avatar: "/images/client-avatar-2.jpg",
   },
   {
-    text: "The cybersecurity solutions provided by TechEdge have significantly enhanced our data protection measures.",
+    text: "The cybersecurity solutions provided by DigiTech Edge have significantly enhanced our data protection measures.",
     name: "Michael Chen",
     position: "Security Director, SecureNet",
     avatar: "/images/client-avatar-3.jpg",

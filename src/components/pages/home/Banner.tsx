@@ -53,7 +53,9 @@ const Banner: React.FC = () => {
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
               {bannerItems[currentIndex].text}
             </h1>
-            <h2 className="text-xl sm:text-2xl mb-8">Connect with TechEdge</h2>
+            <h2 className="text-xl sm:text-2xl mb-8">
+              Connect with DigiTech Edge
+            </h2>
             <Link href={bannerItems[currentIndex].link}>
               <p className="bg-white text-blue-600 hover:bg-blue-100 font-bold py-3 px-6 rounded-full transition duration-300 w-48 mx-auto">
                 {bannerItems[currentIndex].buttonText}

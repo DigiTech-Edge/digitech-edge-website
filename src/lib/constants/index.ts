@@ -26,6 +26,7 @@ export const services = [
     name: "UI and UX Solutions",
     description:
       "Creating intuitive and engaging user interfaces and experiences to enhance user satisfaction and interaction.",
+    iconName: "FaDesktop",
     image: "/images/services/uix.png",
     summary: [
       "User-centered design",
@@ -56,6 +57,7 @@ export const services = [
     name: "Web Design Solutions",
     description:
       "Designing visually appealing and functional websites tailored to meet your business needs.",
+    iconName: "MdWeb",
     image: "/images/services/uix.png",
     summary: [
       "Custom design",
@@ -86,6 +88,7 @@ export const services = [
     name: "IT Skills Training",
     description:
       "Providing comprehensive training programs to equip individuals with essential IT skills and knowledge.",
+    iconName: "FaChalkboardTeacher",
     image: "/images/services/uix.png",
     summary: [
       "Programming",
@@ -116,6 +119,7 @@ export const services = [
     name: "Graphic Design",
     description:
       "Crafting visually compelling graphics and visual content to effectively communicate your brand message.",
+    iconName: "FaPaintBrush",
     image: "/images/services/uix.png",
     summary: [
       "Logo design",
@@ -146,6 +150,7 @@ export const services = [
     name: "IT Infrastructure Management",
     description:
       "Managing and optimizing your IT infrastructure to ensure seamless and efficient operations.",
+    iconName: "FaServer",
     image: "/images/services/uix.png",
     summary: [
       "Network design",
@@ -176,6 +181,7 @@ export const services = [
     name: "IT Consulting and Strategy",
     description:
       "Offering expert IT consulting services to develop and implement effective technology strategies for your business.",
+    iconName: "FaChartLine",
     image: "/images/services/uix.png",
     summary: [
       "IT roadmap",
@@ -206,6 +212,7 @@ export const services = [
     name: "App Development",
     description:
       "Creating powerful, user-friendly mobile applications for iOS and Android platforms to extend your digital reach.",
+    iconName: "FaMobileAlt",
     image: "/images/services/uix.png",
     summary: [
       "Cross-platform",

@@ -22,7 +22,7 @@ export default function AboutUs() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <p className="text-lg mb-8">
-          At TechEdge, we are a leading provider of innovative technology
+          At DigiTech Edge, we are a leading provider of innovative technology
           solutions, specializing in creating tailored systems that solve
           complex challenges across various sectors. With a team of highly
           skilled professionals, we offer a comprehensive range of IT services
@@ -30,15 +30,15 @@ export default function AboutUs() {
         </p>
 
         <p className="text-lg mb-8">
-          What sets TechEdge apart is our commitment to staying at the forefront
-          of technological advancements. We continuously invest in research and
-          development, ensuring that our solutions leverage the latest industry
-          best practices and cutting-edge technologies.
+          What sets DigiTech Edge apart is our commitment to staying at the
+          forefront of technological advancements. We continuously invest in
+          research and development, ensuring that our solutions leverage the
+          latest industry best practices and cutting-edge technologies.
         </p>
 
         <p className="text-lg mb-8">
-          At the core of TechEdge is a team of passionate individuals who thrive
-          on delivering excellence. We believe in fostering long-term
+          At the core of DigiTech Edge is a team of passionate individuals who
+          thrive on delivering excellence. We believe in fostering long-term
           partnerships with our clients, providing ongoing support and guidance
           to ensure their technology investments continue to meet their evolving
           needs.
@@ -46,8 +46,8 @@ export default function AboutUs() {
 
         <p className="text-lg">
           Join the growing list of satisfied clients who have experienced the
-          TechEdge difference. Contact us today to learn how we can leverage
-          technology to unlock new opportunities for your business.
+          DigiTech Edge difference. Contact us today to learn how we can
+          leverage technology to unlock new opportunities for your business.
         </p>
       </motion.div>
 
@@ -70,7 +70,7 @@ export default function AboutUs() {
 
           <UnderlinedHeading text="VISION" className="text-white" />
           <p className="text-lg">
-            TechEdge company envision a future where technology seamlessly
+            DigiTech Edge company envision a future where technology seamlessly
             enhances every aspect of human life, empowering individuals and
             businesses to reach their full potential. We aim to create
             cutting-edge solutions that revolutionize industries, simplify
@@ -139,11 +139,13 @@ export default function AboutUs() {
             </p>
           </li>
         </ul>
-        <p className="mt-8">
-          By upholding these core values, we aim to create a work environment
-          that nurtures talent, fosters innovation, and delivers exceptional
-          products and services that positively impact the world around us.
-        </p>
+        <div className="core-values">
+          <p className="mt-8 text-left">
+            By upholding these core values, we aim to create a work environment
+            that nurtures talent, fosters innovation, and delivers exceptional
+            products and services that positively impact the world around us.
+          </p>
+        </div>
       </motion.div>
     </>
   );

@@ -5,10 +5,10 @@ import Link from "next/link";
 import UnderlinedHeading from "@/components/global/UnderlinedHeading";
 import { Image } from "@nextui-org/react";
 
-const Project = () => {
+export default function Project() {
   return (
     <motion.div
-      className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center"
+      className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -45,14 +45,10 @@ const Project = () => {
       >
         <Image
           src="/images/TechEdge mockup.png"
-          alt="TechEdge Mockup"
-          width={1200}
-          height={675}
-          className="rounded-3xl object-contain object-center"
+          alt="DigiTech Edge Mockup"
+          className="rounded-3xl object-fit object-center"
         />
       </motion.div>
     </motion.div>
   );
-};
-
-export default Project;
+}

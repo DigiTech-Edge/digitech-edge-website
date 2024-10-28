@@ -38,7 +38,12 @@ const NavBar = () => {
           }
         />
         <NavbarBrand>
-          <Image src="/logo.png" alt="TechEdge" width={100} height={100} />
+          <Link href="/">
+          <Image src="/logo.png" alt="DigiTech Edge" width={50} height={50} />
+          <p className="text-xl font-bold ml-2 text-primary hidden lg:block">
+            DigiTech Edge
+          </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="start" className="hidden sm:flex gap-10 text-xl">
@@ -57,7 +62,7 @@ const NavBar = () => {
         })}
       </NavbarContent>
       <NavbarContent justify="end">
-        <AiOutlineSearch size={24} />
+        {/* <AiOutlineSearch size={24} /> */}
       </NavbarContent>
       <NavbarMenu className="bg-white flex flex-col gap-10">
         {NavbarLinks.map((link) => {

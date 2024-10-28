@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@nextui-org/react": "^2.4.6",
+    "digitech-edge-website": "file:",
     "framer-motion": "^11.3.24",
     "next": "14.2.5",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.53.1",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.2.1",
+    "resend": "^4.0.0",
     "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

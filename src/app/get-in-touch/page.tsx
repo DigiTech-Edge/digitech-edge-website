@@ -5,10 +5,13 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
+  FaTiktok,
 } from "react-icons/fa";
 import CustomBanner from "@/components/global/CustomBanner";
 import GetInTouchForm from "@/components/pages/get-in-touch/GetInTouchForm";
 import Image from "next/image";
+import { socialLinks } from "@/lib/constants/social";
+import SocialShare from "@/components/global/SocialShare";
 
 export default function GetInTouch() {
   return (
@@ -50,7 +53,7 @@ export default function GetInTouch() {
                     <span className="text-primary text-sm font-bold">
                       Email
                     </span>
-                    <span>papakwadwobona@gmail.com</span>
+                    <span>digitechedgesolutions@gmail.com</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-2 p-4 bg-gray-100 rounded-lg">
@@ -61,16 +64,13 @@ export default function GetInTouch() {
                     <span className="text-primary text-sm font-bold">
                       Phone
                     </span>
-                    <span>(+233) 540 575 329</span>
+                    <span>(+233) 549475922</span>
                   </div>
                 </div>
               </div>
             </CardBody>
-            <CardFooter className="flex justify-center space-x-4 pt-0 text-3xl">
-              <FaFacebookF className="text-gray-600 hover:text-primary cursor-pointer" />
-              <FaTwitter className="text-gray-600 hover:text-primary cursor-pointer" />
-              <FaLinkedinIn className="text-gray-600 hover:text-primary cursor-pointer" />
-              <FaInstagram className="text-gray-600 hover:text-primary cursor-pointer" />
+            <CardFooter className="flex justify-center pt-0">
+              <SocialShare iconSize={28} />
             </CardFooter>
           </Card>
         </div>
