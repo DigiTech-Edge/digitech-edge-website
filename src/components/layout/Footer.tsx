@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Input, Button } from "@nextui-org/react";
+import toast from "react-hot-toast";
 import {
   FaFacebookF,
   FaTwitter,
@@ -18,6 +19,7 @@ import {
   newsletterSchema,
   type NewsletterFormData,
 } from "@/lib/schemas/newsletter.schema";
+import { subscribeToNewsletter } from "@/utils/email";
 
 const Footer = () => {
   const {
@@ -31,14 +33,21 @@ const Footer = () => {
       email: "",
     },
   });
+  
 
   const onSubmit = async (data: NewsletterFormData) => {
     try {
-      // TODO: Implement newsletter subscription
-      console.log(data);
-      reset(); // Reset form after successful submission
+      const result = await subscribeToNewsletter(data);
+
+      if (result.success) {
+        toast.success("Successfully subscribed to newsletter!");
+        reset();
+      } else {
+        toast.error(result.error || "Failed to subscribe. Please try again.");
+      }
     } catch (error) {
       console.error("Error subscribing to newsletter:", error);
+      toast.error("Something went wrong. Please try again later.");
     }
   };
 
@@ -120,7 +129,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">
             Subscribe to Our Newsletter
           </h3>
-          <form 
+          <form
             className="flex flex-col sm:flex-row justify-center items-start gap-2 sm:gap-0"
             onSubmit={handleSubmit(onSubmit)}
           >
