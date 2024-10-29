@@ -33,7 +33,6 @@ const Footer = () => {
       email: "",
     },
   });
-  
 
   const onSubmit = async (data: NewsletterFormData) => {
     try {
@@ -61,7 +60,7 @@ const Footer = () => {
               DigiTech Edge
             </p>
           </div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center mt-4">
             Empowering businesses with cutting-edge technology solutions.
           </p>
         </div>
@@ -98,11 +97,11 @@ const Footer = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" className="hover:text-blue-300 transition">
                   Blog
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
@@ -118,7 +117,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <p className="mb-2">123 Tech Street, Digital City, 12345</p>
-            <p className="mb-2">Phone: (+233) 549475922</p>
+            <div className="mb-2 flex gap-2 justify-center">
+              <p>Phone:</p>
+              <div className="flex flex-col">
+                <p>(+233) 549475922</p>
+                <p>(+233) 540575329</p>
+              </div>
+            </div>
             <p className="mb-4">Email: digitechedgesolutions@gmail.com</p>
             <div className="mt-8 flex justify-center">
               <SocialShare className="text-white" />

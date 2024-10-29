@@ -58,7 +58,7 @@ export const services = [
     description:
       "Designing visually appealing and functional websites tailored to meet your business needs.",
     iconName: "MdWeb",
-    image: "/images/services/uix.png",
+    image: "/images/services/web design.jpg",
     summary: [
       "Custom design",
       "Mobile-first",
@@ -89,7 +89,7 @@ export const services = [
     description:
       "Providing comprehensive training programs to equip individuals with essential IT skills and knowledge.",
     iconName: "FaChalkboardTeacher",
-    image: "/images/services/uix.png",
+    image: "/images/services/IT Skills Training.jpg",
     summary: [
       "Programming",
       "Web development",
@@ -120,7 +120,7 @@ export const services = [
     description:
       "Crafting visually compelling graphics and visual content to effectively communicate your brand message.",
     iconName: "FaPaintBrush",
-    image: "/images/services/uix.png",
+    image: "/images/services/Graphic design.jpg",
     summary: [
       "Logo design",
       "Brand identity",
@@ -151,7 +151,7 @@ export const services = [
     description:
       "Managing and optimizing your IT infrastructure to ensure seamless and efficient operations.",
     iconName: "FaServer",
-    image: "/images/services/uix.png",
+    image: "/images/services/IT Infrastructure Management.jpg",
     summary: [
       "Network design",
       "Server management",
@@ -182,7 +182,7 @@ export const services = [
     description:
       "Offering expert IT consulting services to develop and implement effective technology strategies for your business.",
     iconName: "FaChartLine",
-    image: "/images/services/uix.png",
+    image: "/images/services/IT Consulting and Strategy.jpg",
     summary: [
       "IT roadmap",
       "Digital transformation",
@@ -213,7 +213,7 @@ export const services = [
     description:
       "Creating powerful, user-friendly mobile applications for iOS and Android platforms to extend your digital reach.",
     iconName: "FaMobileAlt",
-    image: "/images/services/uix.png",
+    image: "/images/services/App Development.jpg",
     summary: [
       "Cross-platform",
       "UI/UX design",

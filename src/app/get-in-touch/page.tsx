@@ -21,7 +21,7 @@ export default function GetInTouch() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="shadow-xl h-full">
-            <CardBody className="p-8 overflow-hidden">
+            <CardBody className="sm:p-8 p-2 overflow-hidden">
               <p className="text-primary text-sm font-bold">Get in Touch</p>
               <h2 className="text-4xl font-bold mb-4">
                 Let&apos;s Chat, Reach Out to Us
@@ -36,7 +36,7 @@ export default function GetInTouch() {
           </Card>
 
           <Card className="shadow-xl h-full">
-            <CardBody className="p-8">
+            <CardBody className="sm:p-8 p-2">
               <Image
                 src="/images/get-in-touch.png"
                 alt="Contact"
@@ -53,7 +53,9 @@ export default function GetInTouch() {
                     <span className="text-primary text-sm font-bold">
                       Email
                     </span>
-                    <span>digitechedgesolutions@gmail.com</span>
+                    <span className="max-sm:text-sm">
+                      digitechedgesolutions@gmail.com
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-start gap-2 p-4 bg-gray-100 rounded-lg">
@@ -64,13 +66,14 @@ export default function GetInTouch() {
                     <span className="text-primary text-sm font-bold">
                       Phone
                     </span>
-                    <span>(+233) 549475922</span>
+                    <span className="max-sm:text-sm">(+233) 549475922</span>
+                    <span className="max-sm:text-sm">(+233) 540575329</span>
                   </div>
                 </div>
               </div>
             </CardBody>
             <CardFooter className="flex justify-center pt-0">
-              <SocialShare iconSize={28} />
+              <SocialShare iconSize={20} />
             </CardFooter>
           </Card>
         </div>

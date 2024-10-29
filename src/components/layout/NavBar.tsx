@@ -39,10 +39,16 @@ const NavBar = () => {
         />
         <NavbarBrand>
           <Link href="/">
-          <Image src="/logo.png" alt="DigiTech Edge" width={50} height={50} />
-          <p className="text-xl font-bold ml-2 text-primary hidden lg:block">
-            DigiTech Edge
-          </p>
+            <Image
+              src="/logo.png"
+              alt="DigiTech Edge"
+              width={50}
+              height={50}
+              className="w-8 h-8 sm:w-[50px] sm:h-[50px]"
+            />
+            <p className="text-xl font-bold ml-2 text-primary hidden lg:block">
+              DigiTech Edge
+            </p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
